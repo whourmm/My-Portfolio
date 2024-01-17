@@ -1,7 +1,7 @@
 import React from "react";
 
 const Hero = () => {
-  return <div className="">Hero</div>;
+  return <section className="relative w-full h-screen mx-auto z-50"></section>;
 };
 
 export default Hero;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
@@ -11,9 +11,31 @@ import { fadeInAnimationVariantsTab } from "../utils/motion";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (window.scrollY > lastScrollY) setShow(false);
+    else setShow(true);
+    // remember current page location to use in the next move
+    setLastScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+
+    // cleanup function
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
+  }, [lastScrollY]);
+
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full fixed flex items-center py-5 ${
+        show ? "top-0" : "top-[-100px]"
+      } z-20 bg-primary`}
+      style={{ zIndex: 1000 }}
     >
       <div className="w-full max-w-7xl mx-auto justify-between flex">
         <Link
