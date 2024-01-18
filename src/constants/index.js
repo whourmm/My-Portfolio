@@ -43,24 +43,24 @@ import {
   
   const services = [
     {
-      title: "Frontend Developer",
+      title: "My github",
       icon: web,
-      link: "https://www.w3schools.com/react/react_router.asp"
+      link: "https://github.com/whourmm"
     },
     {
       title: "Physics Tutor",
       icon: mobile,
-      link: "https://www.w3schools.com/react/react_router.asp"
+      link: "https://www.instagram.com/p/Cs5X_s8Sni3/?img_index=1"
     },
     {
-      title: "HighTech CoreTeam Memer",
+      title: "Upcoming Project",
       icon: backend,
-      link: "https://www.w3schools.com/react/react_router.asp"
+      link: "https://github.com/macgeargear/codingChallenge"
     },
     {
       title: "CV",
       icon: creator,
-      link: "https://www.w3schools.com/react/react_router.asp"
+      link: "https://github.com/whourmm/portfolio.github.io/blob/main/Computer%20Engineering%20and%20Digital%20Technology%20in%20Chulalongkorn%20University.pdf"
     },
 
   ];
