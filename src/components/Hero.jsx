@@ -8,7 +8,6 @@ import {
   backgroundVariant,
   imageVariant,
 } from "../utils/motion.js";
-import { git } from "../assets/index.js";
 
 const Hero = () => {
   return (

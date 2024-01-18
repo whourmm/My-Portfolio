@@ -31,33 +31,38 @@ import {
       title: "About",
     },
     
-    {
-      id: "contact",
-      title: "Contact",
-    },
-    {
-      id: "experience",
-      title: "Experience"
-    }
+    // {
+    //   id: "contact",
+    //   title: "Contact",
+    // },
+    // {
+    //   id: "experience",
+    //   title: "Experience"
+    // }
   ];
   
   const services = [
     {
       title: "Frontend Developer",
       icon: web,
+      link: "https://www.w3schools.com/react/react_router.asp"
     },
     {
       title: "Physics Tutor",
       icon: mobile,
+      link: "https://www.w3schools.com/react/react_router.asp"
     },
     {
       title: "HighTech CoreTeam Memer",
       icon: backend,
+      link: "https://www.w3schools.com/react/react_router.asp"
     },
     {
-      title: "CEDT presenter",
+      title: "CV",
       icon: creator,
+      link: "https://www.w3schools.com/react/react_router.asp"
     },
+
   ];
   
   const technologies = [

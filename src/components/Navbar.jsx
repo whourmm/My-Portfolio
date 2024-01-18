@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full fixed items-center py-5 ${
+      className={`${styles.paddingX} w-screen fixed items-center py-5 ${
         show ? "top-0" : "top-[-100px]"
       } z-20 bg-primary`}
       style={{ zIndex: 1000 }}
