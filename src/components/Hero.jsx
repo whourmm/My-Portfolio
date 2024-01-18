@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import github from "../assets/github.png";
 import { styles } from "../styles.js";
 import {
   staggerContainer,
-  slideIn,
   textVariant,
   backgroundVariant,
 } from "../utils/motion.js";
@@ -28,16 +28,13 @@ const Hero = () => {
           </motion.h1>
           <motion.div
             variants={textVariant(0.6)}
-            className="flex flex-row lg:leading-[50px] sm:leading-[40px] sm:text-md md:text-lg "
+            className="mt-5  flex flex-row lg:leading-[50px] sm:leading-[40px] leading-[30px] sm:text-md md:text-lg "
           >
-            <h1>
-              " Diligent and Passionate student from Computer Engineering and
-              Digital Technology Program. Improved problem-solving and computer
-              project management skills through recent achievements. Seeking a
-              Front-end position to further develop my career as a Full
-              stack-developer. "
-            </h1>
+            <h1>Scroll down for more Context!</h1>
           </motion.div>
+        </div>
+        <div className="col-2">
+          <img src={github} className="lg:w-[500px] " />
         </div>
       </motion.div>
     </section>
