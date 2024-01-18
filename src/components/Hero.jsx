@@ -1,12 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
-import github from "../assets/github.png";
+import github from "../assets/anda.png";
 import { styles } from "../styles.js";
 import {
   staggerContainer,
   textVariant,
   backgroundVariant,
+  imageVariant,
 } from "../utils/motion.js";
+import { git } from "../assets/index.js";
 
 const Hero = () => {
   return (
@@ -22,19 +24,21 @@ const Hero = () => {
           variants={backgroundVariant(0.2)}
           className="absolute bg-black w-screen h-screen opacity-20 "
         />
-        <div className="top-[200px] flex justify-center ml-[60px] mr-[60px]  flex-col relative z-10">
-          <motion.h1 variants={textVariant(0.5)} className={styles.heroHeading}>
-            I'm Anda
-          </motion.h1>
-          <motion.div
-            variants={textVariant(0.6)}
-            className="mt-5  flex flex-row lg:leading-[50px] sm:leading-[40px] leading-[30px] sm:text-md md:text-lg "
+        <div className="top-[200px] flex items-center flex-col lg:ml-[250px] relative z-10">
+          <motion.dev
+            variants={textVariant(0.5)}
+            className={styles.heroHeading}
           >
-            <h1>Scroll down for more Context!</h1>
-          </motion.div>
-        </div>
-        <div className="col-2">
-          <img src={github} className="lg:w-[500px] " />
+            I'm Anda
+          </motion.dev>
+          <motion.h1 variants={textVariant(0.5)} className="text-left">
+            Varinthorn Chatburapachai
+          </motion.h1>
+          <motion.img
+            variants={imageVariant(0.5)}
+            src={github}
+            className="rounded-full sm:hidden w-[200px] mt-20"
+          />
         </div>
       </motion.div>
     </section>
