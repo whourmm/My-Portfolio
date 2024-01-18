@@ -16,6 +16,24 @@ export const textVariant = (delay) => {
     };
   };
 
+  export const backgroundVariant = (delay) => {
+    return {
+      hidden: {
+        y: -50,
+        opacity: 0,
+      },
+      show: {
+        y: 0,
+        opacity: 0.5,
+        transition: {
+          type: "spring",
+          duration: 1.00,
+          delay: delay,
+        },
+      },
+    };
+  };
+
 
 
   export const navVariants = {

@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -7,24 +8,20 @@ import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Feedbacks from "./components/Feedbacks";
 import Tech from "./components/Tech";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div
-        className="bg-cover bg-no-repeat bg-center bg-hero-pattern fixed"
-        style={{ zIndex: 100 }}
-      >
-        <Navbar />
-        <Hero />
-      </div>
       <Parallax pages={2} style={{ top: "0", left: "0" }}>
         <ParallaxLayer offset={0} speed={0.5}>
-          <img src="src\assets\herobg.jpg" />
+          <div className="bg-cover bg-no-repeat bg-center bg-hero-pattern">
+            <Navbar />
+            <Hero />
+          </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1} speed={2.2}>
+        {/* ParallaxLayer for other components */}
+        <ParallaxLayer offset={1} speed={2.0}>
           <About />
           <Experience />
           <Tech />
