@@ -35,9 +35,7 @@ function CustomizedTimeline() {
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot variant="outlined">
-                <Link to="" target="_blank"></Link>
-              </TimelineDot>
+              <TimelineDot color="primary" variant="outlined"></TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "50px", px: 2 }}>
@@ -83,7 +81,7 @@ function CustomizedTimeline() {
             <TimelineSeparator>
               <TimelineConnector />
               <TimelineDot color="primary" variant="outlined"></TimelineDot>
-              <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+              <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "50px", px: 2 }}>
               <Typography variant="h6" component="div">
@@ -103,8 +101,8 @@ function CustomizedTimeline() {
               2019-2022
             </TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-              <TimelineDot color="secondary" variant="outlined"></TimelineDot>
+              <TimelineConnector />
+              <TimelineDot color="primary" variant="outlined"></TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "50px", px: 2 }}>

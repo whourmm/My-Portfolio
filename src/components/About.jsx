@@ -13,7 +13,7 @@ const ServiceCard = ({ index, title, icon, link }) => (
     <Link to={link} target="_blank">
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        className=" w-[185px] lg:w-[255px] green-pink-gradient p-[2px] rounded-full shadow-card"
+        className=" w-[185px] lg:w-[255px] green-pink-gradient p-[2px] rounded-[50px] shadow-card"
       >
         <div
           options={{
@@ -21,7 +21,7 @@ const ServiceCard = ({ index, title, icon, link }) => (
             scale: 1,
             speed: 450,
           }}
-          className=" bg-tertiary rounded-full  py-5 px-1 w-[180px] lg:w-[250px] min-h-[180px] lg:min-h-[250px] flex justify-evenly items-center flex-col"
+          className=" bg-tertiary rounded-[50px]  py-5 px-1 w-[180px] lg:w-[250px] min-h-[220px] lg:min-h-[280px] flex justify-evenly items-center flex-col"
         >
           <img
             src={icon}

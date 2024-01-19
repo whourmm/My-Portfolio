@@ -1,3 +1,4 @@
+import { Instagram } from "@mui/icons-material";
 import {
     mobile,
     backend,
@@ -23,28 +24,34 @@ import {
     jobit,
     tripguide,
     threejs,
+    line,
+    gmail,
+    instagram
   } from "../assets";
 
-  // export const allContact = [
-  //   {
-  //     icon: <Icons.facebook />,
-  //     text: "Gmail",
-  //     link: "",
-  //   },
-  //   {
-  //     icon: <Icons.instagram />,
-  //     text: "Instagram",
-  //     link: "https://www.instagram.com/_anda_varin_/",
-  //   },
-  // ];
+  export const allContact = [
+    {
+      image: line,
+      text: "line",
+      link: "",
+    },
+    {
+      image: instagram,
+      text: "Instagram",
+      link: "https://www.instagram.com/_anda_varin_/",
+    },
+    {
+      image: gmail,
+      text: "gmail",
+      link: "6633221621@student.chula.ac.th",
+    },
+  ];
   
   export const navLinks = [
     {
       id: "about",
       title: "About",
-    },
-    
-    
+    },    
     {
       id: "experience",
       title: "Experience"

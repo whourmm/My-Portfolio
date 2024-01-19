@@ -26,7 +26,9 @@ const App = () => {
         <ParallaxLayer offset={2} speed={0.9}>
           <Experience />
         </ParallaxLayer>
-        <ParallaxLayer offset={2} speed={0.9}></ParallaxLayer>
+        <ParallaxLayer offset={3} speed={0.9}>
+          <Contact />
+        </ParallaxLayer>
       </Parallax>
     </BrowserRouter>
   );
