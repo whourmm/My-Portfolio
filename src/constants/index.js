@@ -33,7 +33,7 @@ import {
     {
       image: line,
       text: "line",
-      link: "",
+      link: "https://web.facebook.com/vast.anda",
     },
     {
       image: instagram,
@@ -43,7 +43,7 @@ import {
     {
       image: gmail,
       text: "gmail",
-      link: "6633221621@student.chula.ac.th",
+      link: "discordapp.com/users/694203870796316692",
     },
   ];
   
