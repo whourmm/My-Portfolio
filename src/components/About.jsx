@@ -13,7 +13,7 @@ const ServiceCard = ({ index, title, icon, link }) => (
     <Link to={link} target="_blank">
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        className="w-[185px] lg:w-[255px] green-pink-gradient p-[2px] rounded-full shadow-card"
+        className=" w-[185px] lg:w-[255px] green-pink-gradient p-[2px] rounded-full shadow-card"
       >
         <div
           options={{
@@ -21,12 +21,12 @@ const ServiceCard = ({ index, title, icon, link }) => (
             scale: 1,
             speed: 450,
           }}
-          className="bg-tertiary rounded-full py-5 px-1 w-[180px] lg:w-[250px] min-h-[150px] lg:min-h-[280px] flex justify-evenly items-center flex-col"
+          className=" bg-tertiary rounded-full  py-5 px-1 w-[180px] lg:w-[250px] min-h-[180px] lg:min-h-[250px] flex justify-evenly items-center flex-col"
         >
           <img
             src={icon}
             alt="web-development"
-            className="w-[150px] h-16 object-contain"
+            className="w-[150px] h-10 lg:h-16 object-contain items-center "
           />
 
           <h3 className="text-white text-[20px] font-bold text-center">
@@ -41,7 +41,7 @@ const ServiceCard = ({ index, title, icon, link }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()} className=" ">
+      <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} ml-6`}>Introduction</p>
         <h2 className={`${styles.sectionHeadText} ml-6`}>About Me</h2>
       </motion.div>
@@ -53,7 +53,7 @@ const About = () => {
         Diligent and Passionate student from Computer Engineering and Digital
         Technology Program. Improved problem-solving and computer project
         management skills through recent achievements. Seeking a Front-end
-        position to further develop my career as a Full stack-developer. "
+        position to further develop my career as a Full stack-developer.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10 justify-center items-center">

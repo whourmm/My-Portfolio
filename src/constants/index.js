@@ -24,6 +24,19 @@ import {
     tripguide,
     threejs,
   } from "../assets";
+
+  // export const allContact = [
+  //   {
+  //     icon: <Icons.facebook />,
+  //     text: "Gmail",
+  //     link: "",
+  //   },
+  //   {
+  //     icon: <Icons.instagram />,
+  //     text: "Instagram",
+  //     link: "https://www.instagram.com/_anda_varin_/",
+  //   },
+  // ];
   
   export const navLinks = [
     {
@@ -31,14 +44,15 @@ import {
       title: "About",
     },
     
-    // {
-    //   id: "contact",
-    //   title: "Contact",
-    // },
+    
     {
       id: "experience",
       title: "Experience"
-    }
+    },
+    {
+      id: "contact",
+      title: "Contact",
+    },
   ];
   
   const services = [
