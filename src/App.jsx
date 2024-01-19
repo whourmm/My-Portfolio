@@ -12,7 +12,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
-      <Parallax pages={2}>
+      <Parallax pages={3}>
         <ParallaxLayer offset={0} speed={0.5}>
           <div className="bg-cover bg-no-repeat bg-center bg-hero-pattern">
             <Hero />
@@ -22,6 +22,9 @@ const App = () => {
         {/* ParallaxLayer for other components */}
         <ParallaxLayer offset={1} speed={0.9}>
           <About />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2} speed={0.9}>
+          <Experience />
         </ParallaxLayer>
       </Parallax>
     </BrowserRouter>

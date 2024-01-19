@@ -35,10 +35,10 @@ import {
     //   id: "contact",
     //   title: "Contact",
     // },
-    // {
-    //   id: "experience",
-    //   title: "Experience"
-    // }
+    {
+      id: "experience",
+      title: "Experience"
+    }
   ];
   
   const services = [
