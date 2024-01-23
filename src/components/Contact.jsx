@@ -9,14 +9,14 @@ import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <>
-      <motion.div variants={textVariant(0.5)}>
+      <motion.div variants={textVariant(0.5)} className="mt-[600px] xs:mt-0">
         <p className={`${styles.sectionSubText} ml-6`}>
           Let's me introduce myself
         </p>
         <h2 className={`${styles.sectionHeadText} ml-6`}>Contact Me</h2>
       </motion.div>
       <motion.div variants={textVariant(0.6)} className="mt-[90px]">
-        <div className="grid xs:grid-cols-3 grid-cols-1 gap-10">
+        <div className="grid xs:grid-cols-3 grid-cols-1 xs:gap-10 gap-[150px]">
           {allContact.map((contact, index) => (
             <div key={index} className="w-[50px] sm:w-[80px] mx-auto ">
               <Link to={contact.link} target="_blank">

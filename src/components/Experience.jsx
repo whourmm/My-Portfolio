@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 function CustomizedTimeline() {
   return (
     <>
-      <motion.div variants={textVariant(0.5)}>
+      <motion.div variants={textVariant(0.5)} className="mt-[500px] xs:mt-0">
         <p className={`${styles.sectionSubText} ml-6`}>
           My recent achievements
         </p>
@@ -40,7 +40,7 @@ function CustomizedTimeline() {
             </TimelineSeparator>
             <TimelineContent sx={{ py: "50px", px: 2 }}>
               <Typography variant="h6" component="div">
-                Physics Olympic Competition, POSN
+                Physics Olympic Competition (POSN)
               </Typography>
               <Typography variant="h10" color="#9DA0BF">
                 BRONZE Medal in TPHO 21th

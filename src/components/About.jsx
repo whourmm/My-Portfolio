@@ -9,11 +9,11 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon, link }) => (
-  <Tilt className="xs:w-[250px]  w-full">
+  <Tilt className="xs:w-[250px]  w-full ">
     <Link to={link} target="_blank">
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        className=" w-[185px] lg:w-[255px] green-pink-gradient p-[2px] rounded-[50px] shadow-card"
+        className=" w-[185px] lg:w-[255px] green-pink-gradient p-[2px] rounded-[50px] shadow-card ml-20 xs:ml-0"
       >
         <div
           options={{
@@ -29,7 +29,7 @@ const ServiceCard = ({ index, title, icon, link }) => (
             className="w-[150px] h-10 lg:h-16 object-contain items-center "
           />
 
-          <h3 className="text-white text-[20px] font-bold text-center">
+          <h3 className="text-white text-[20px] font-bold text-center ">
             {title}
           </h3>
         </div>
