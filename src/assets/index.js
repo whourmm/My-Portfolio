@@ -9,6 +9,15 @@ import close from "./close.svg";
 import line from "./line.png"
 import gmail from "./gmail.png"
 import instagram from "./instagram.png";
+import anda from "./anda.jpg"
+import schoolDarun from "./school.jpg"
+import scius from "./SCiUS.jpg"
+import tpho from "./TPHO.jpg"
+import boardgame from "./boardgame.png"
+import codingChallenge from "./codingChallenge.svg"
+import ku01 from "./ku01.jpg"
+import test from "./test.png"
+import website from "./website.png"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -23,6 +32,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import bgend from "./bgend.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -65,4 +75,14 @@ export {
   carrent,
   jobit,
   tripguide,
+  anda,
+  schoolDarun,
+  scius,
+  ku01,
+  codingChallenge,
+  tpho,
+  boardgame,
+  test,
+  website,
+  bgend
 };

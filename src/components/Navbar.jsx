@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
@@ -12,36 +12,38 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [show, setShow] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  const controlNavbar = () => {
-    if (window.scrollY > lastScrollY) setShow(false);
-    else setShow(true);
-    // remember current page location to use in the next move
-    setLastScrollY(window.scrollY);
-  };
+  const [prevScrollY, setPrevScrollY] = useState(window.scrollY);
 
   useEffect(() => {
-    window.addEventListener("scroll", controlNavbar);
+    const controlNavbar = () => {
+      const currentScrollPos = window.scrollY;
+      if (prevScrollY > currentScrollPos)
+        setShow(true); //Show Navbar when scroll up
+      else setShow(false); //Hide Navbar when scroll down
 
+      setPrevScrollY(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", controlNavbar);
+    console.log("useEffect");
     // cleanup function
     return () => {
       window.removeEventListener("scroll", controlNavbar);
     };
-  }, [lastScrollY]);
+  }, [prevScrollY]);
 
   return (
-    <nav
+    <section
       className={`${styles.paddingX} w-screen fixed items-center py-5 ${
-        show ? "top-0" : "top-[-100px]"
+        show ? "top-0" : "top-[-10000px]"
       } z-20 bg-primary`}
-      style={{ zIndex: 1000 }}
+      style={{ zIndex: 10 }}
     >
-      <div className="w-full max-w-7xl mx-auto justify-between flex">
-        <Link
-          to="/"
+      <div className="w-full mx-auto justify-between flex">
+        <a
           className="flex items-center gap-2 "
-          onClick={() => {
+          onClick={(e) => {
+            e.preventDefault();
             setActive("");
             window.scrollTo(0, 0);
           }}
@@ -50,7 +52,8 @@ const Navbar = () => {
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Anda &nbsp;<span className="md:block hidden">| Varinthorn</span>
           </p>
-        </Link>
+        </a>
+        {/* PC Screen View */}
         <ul className="list-none hidden sm:flex flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
@@ -60,9 +63,10 @@ const Navbar = () => {
               } hover:text-white font-medium cursor-pointer`}
               onClick={() => {
                 setActive(link.title);
+                console.log(`Now clicking ${link.title}`);
               }}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a href={"#" + link.description}>{link.title}</a>
             </li>
           ))}
         </ul>
@@ -126,7 +130,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </nav>
+    </section>
   );
 };
 

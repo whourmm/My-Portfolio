@@ -24,12 +24,13 @@ const Hero = () => {
           className="absolute bg-black w-screen h-screen opacity-20 "
         />
         <div className=" top-[300px] flex flex-col lg:ml-[250px] relative z-10">
-          <motion.dev
+          <motion.div
             variants={textVariant(0.5)}
             className={`${styles.heroHeading}`}
           >
             I'm Anda
-          </motion.dev>
+          </motion.div>
+
           <motion.h1
             variants={textVariant(0.5)}
             className="text-center lg:text-left"

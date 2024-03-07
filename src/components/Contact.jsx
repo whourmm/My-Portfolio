@@ -7,9 +7,14 @@ import { allContact } from "../constants";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    console.log("Clk");
+  };
+
   return (
-    <>
-      <motion.div variants={textVariant(0.5)} className="mt-[600px] xs:mt-0">
+    <section className="mt-[150px]">
+      <motion.div variants={textVariant(0.5)} className=" xs:mt-0 ">
         <p className={`${styles.sectionSubText} ml-6`}>
           Let's me introduce myself
         </p>
@@ -35,7 +40,7 @@ const Contact = () => {
           ))}
         </div>
       </motion.div>
-    </>
+    </section>
   );
 };
 

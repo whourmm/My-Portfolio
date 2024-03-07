@@ -26,7 +26,16 @@ import {
     threejs,
     line,
     gmail,
-    instagram
+    instagram,
+    anda,
+    schoolDarun,
+    scius,
+    tpho,
+    boardgame,
+    codingChallenge,
+    ku01,
+    website,
+    bgend
   } from "../assets";
 
   export const allContact = [
@@ -49,15 +58,18 @@ import {
   
   export const navLinks = [
     {
-      id: "about",
+      id : "about",
+      description: "about",
       title: "About",
     },    
     {
       id: "experience",
+      description: "experience",
       title: "Experience"
     },
     {
       id: "contact",
+      description : "contact",
       title: "Contact",
     },
   ];
@@ -74,9 +86,9 @@ import {
       link: "https://www.instagram.com/p/Cs5X_s8Sni3/?img_index=1"
     },
     {
-      title: "Upcoming Project",
+      title: "Static Website Project",
       icon: backend,
-      link: "https://github.com/macgeargear/codingChallenge"
+      link: "https://hightech-codingchallenge.vercel.app/"
     },
     {
       title: "CV",
@@ -141,60 +153,93 @@ import {
     },
   ];
   
-  const experiences = [
+  export const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
+      id: 1,
+      title: "Computer Science Project Competition (Bronze Medal, National)",
+      location: "Role : Programmer",
+      description: `In the topic of Monitoring of electrical quantity detection based on NodeMCU ESP8266.`,
+      buttonText: "Details",
+      date: "2018-2019",
+      icon: "work",
+      color: "purple",
+      tech: ["C", "Ardunino", "ESP8266", "Physics"],
+      image : scius
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
+      id: 2,
+      title: "Physic Olympic Competition, POSN (Bronze Medal, National)",
+      location: "Thailand Physics Olympiad 21th",
+      description: "Achieved a Bronze medal in the National Competition, securing a position among the top 50 highest scores in Thailand. ",
+      buttonText: "Details",
+      date: "2020-2022",
+      icon: "work",
+      color: "yellow",
+      tech: ["Physics", "Time Management"],
+      image : tpho
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
+      id: 3,
+      title: "Coding Competition KU01",
+      location: "Online, Kasetsart University",
+      description: "Top 50% programmer from KU01 2021 (Coding Problem Solving Skills Abilities Test at Kasetsart University)",
+      buttonText: "Details",
+      date: "2021-2023",
+      icon: "work",
+      color: "red",
+      tech: ["Python",  "Time Management"],
+      image : ku01
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
+      id: 4,
+      title: "Graduated from High School",
+      location: "Darunsikkhalai School (ESC)",
+      description: "Over the course of these three years, I not only earned a scholarship but also cultivated leadership skills through participation in various activities.",
+      buttonText: "Details",
+      date: "2023",
+      icon: "school",
+      color: "blue",
+      tech: ["Leadership", "Time Management", "Organization"],
+      image : schoolDarun
+    },
+    {
+      id: 5,
+      title: "Survive the Street (TOP 6 FINALIST)",
+      location: "Role : Project Coordinator , Digital Content Lab (CEA x PTT)",
+      description: "Survive the Street is the boardgame applied WebAR technology to cards to visualize local's daily in Bangkok. ",
+      buttonText: "Details",
+      date: "2023-present",
+      icon: "work",
+      color: "orange",
+      tech: ["Communication Skill", "Pitching Skill"],
+      image : boardgame
+    },
+    {
+      id: 6,
+      title: "Coding Challenge, Frontend Core Team",
+      location: "High Tech, Chulalongkron University",
+      description: "The website where contestants can register to enter, scheduled for April 6, 2024  (HighTech Team)",
+      buttonText: "Details",
+      date: "2023-present",
+      icon: "work",
+      color: "orange",
+      tech: ["React", "Typescript", "Javascript", "CSS", "Html"],
+      image : codingChallenge
+    },
+    {
+      id: 7,
+      title: "Project Website | CU",
+      location: "Chulalongkron University",
+      description: "I utilize Postman for Message Shop Reservation, employing REST API with JWT as the token converter and MongoDB as the database.",
+      buttonText: "Details",
+      date: "2023-present",
+      icon: "school",
+      color: "red",
+      tech: ["JavaScript", "NodeJS", "Postman", "MongoDB", "HTML/CSS"],
+      image : website
     },
   ];
+
   
   const testimonials = [
     {
@@ -289,4 +334,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, testimonials, projects };
