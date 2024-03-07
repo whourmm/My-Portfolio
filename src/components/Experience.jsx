@@ -30,8 +30,8 @@ const Timeline = () => {
 
           return (
             <motion.div
-              variants={textVariant(0.7)}
-              className="flex justify-center items-center"
+              variants={textVariant(0.5)}
+              className="block flex justify-center items-center"
             >
               <div key={element.id} className="flex m-5 relative ">
                 <div
@@ -54,7 +54,7 @@ const Timeline = () => {
                     className={`${color} h-px w-8 translate-y-5 opacity-30`}
                   ></div>
                 </div>
-                <div className="border border-gray-600 rounded-lg px-8 py-4 bg-gray-800 w-full text-center z-10 sm:w-[1000px]">
+                <div className="border border-gray-600 rounded-lg px-8 py-4 bg-gray-800 w-full text-center z-10 lg:w-[1000px]">
                   <div className="sm:text-xl font-medium ">{element.title}</div>
                   <div className="text-gray-300 mb-6 sm:mb-8 sm:text-xs">
                     {element.location}
@@ -73,7 +73,7 @@ const Timeline = () => {
                         className="sm:w-[400px] sm:h-[120px] h-[100px] w-[120px] mt-[-10px] object-contain "
                       />
                     </div>
-                    <div className="hidden sm:block flex flex-wrap mb-1 sm:mt-[-50px] mt-[-10px] justify-center items-center ">
+                    <div className="hidden sm:block flex flex-wrap mb-1 xs:mt-[-50px] sm:mt-[10px] lg:mt-[-10px] justify-center items-center ">
                       {element.tech.map((tech, index) => {
                         return (
                           <span

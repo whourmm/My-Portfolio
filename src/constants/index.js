@@ -156,7 +156,7 @@ import {
   export const experiences = [
     {
       id: 1,
-      title: "Computer Science Project Competition (Bronze Medal, National)",
+      title: "Computer Project Competition (Bronze Medal, National)",
       location: "Role : Programmer",
       description: `In the topic of Monitoring of electrical quantity detection based on NodeMCU ESP8266.`,
       buttonText: "Details",
