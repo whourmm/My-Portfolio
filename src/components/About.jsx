@@ -12,7 +12,7 @@ const ServiceCard = ({ index, title, icon, link }) => (
     <a href={link} target="_blank">
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        className=" w-[150px] sm:w-[185px] lg:w-[255px] green-pink-gradient p-[2px] rounded-[50px] shadow-card sm:ml-20xs:ml-0"
+        className=" w-[150px] sm:w-[185px] lg:w-[255px] green-pink-gradient p-[2px] rounded-[50px] shadow-card xs:ml-10 ml-[80px] "
       >
         <div
           options={{
