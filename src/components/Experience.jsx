@@ -10,7 +10,7 @@ import { styles } from "../styles";
 const Timeline = () => {
   return (
     <div className="block">
-      <div className="mt-[500px] xs:mt-0 mt-[500px]">
+      <div className="mt-[600px] xs:mt-0 ">
         <p className={`${styles.sectionSubText} ml-6`}>
           My recent achievements
         </p>
