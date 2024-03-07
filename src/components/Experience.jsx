@@ -10,7 +10,7 @@ import { styles } from "../styles";
 const Timeline = () => {
   return (
     <div className="block">
-      <div className="mt-[600px] xs:mt-0 ">
+      <div className=" mt-[-800px] xs:mt-0 ">
         <p className={`${styles.sectionSubText} ml-6`}>
           My recent achievements
         </p>
@@ -64,9 +64,16 @@ const Timeline = () => {
                     {element.location}
                     <span className="sm:hidden">| {element.date}</span>
                   </div>
-                  <div className="grid grid-cols-2 sm:gap-5 gap-[-100px]">
+                  <div className="justify-center flex ">
+                    <img
+                      src={element.image}
+                      alt="logo"
+                      className="block sm:hidden sm:w-[400px] sm:h-[120px] h-[100px] w-[120px] mt-[-10px] mb-[10px] object-contain "
+                    />
+                  </div>
+                  <div className=" grid grid-cols-2 sm:gap-5 gap-[-100px]">
                     <div className="">
-                      <div className="mb-4 text-center font-extralight sm:text-[15px] text-[14px] ">
+                      <div className="hidden sm:block mb-4 text-center font-extralight sm:text-[15px] text-[14px] ">
                         {element.description}
                       </div>
                     </div>
@@ -74,22 +81,24 @@ const Timeline = () => {
                       <img
                         src={element.image}
                         alt="logo"
-                        className="sm:w-[400px] sm:h-[120px] h-[100px] w-[120px] mt-[-10px] object-contain "
+                        className="hidden sm:block sm:w-[400px] sm:h-[120px] h-[100px] w-[120px] mt-[-10px] mb-[10px] object-contain "
                       />
                     </div>
-                    <div className="hidden sm:block flex flex-wrap mb-1 xs:mt-[-50px] sm:mt-[10px] lg:mt-[-10px] justify-center items-center ">
-                      {element.tech.map((tech, index) => {
-                        return (
-                          <span
-                            key={index}
-                            className="bg-gray-900 rounded-xl px-2 py-1 text-sm m-1"
-                          >
-                            {tech}
-                          </span>
-                        );
-                      })}
-                    </div>
                   </div>
+
+                  <div className="hidden sm:block flex flex-wrap mb-1 xs:mt-[-50px] sm:mt-[10px] lg:mt-[-10px] justify-center items-center ">
+                    {element.tech.map((tech, index) => {
+                      return (
+                        <span
+                          key={index}
+                          className="bg-gray-900 rounded-xl px-2 py-1 text-sm m-1"
+                        >
+                          {tech}
+                        </span>
+                      );
+                    })}
+                  </div>
+
                   <div className="  block sm:hidden  flex flex-wrap mb-1 sm:mt-[-50px] mt-[-10px] justify-center items-center ">
                     {element.tech.map((tech, index) => {
                       return (
