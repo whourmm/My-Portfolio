@@ -123,6 +123,7 @@ const Navbar = () => {
                   once: true,
                 }}
                 custom={i}
+                key={link.id}
               >
                 <a href={`#${link.id}`}>{link.title}</a>
               </motion.ol>

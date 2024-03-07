@@ -29,12 +29,12 @@ const App = () => {
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={2} speed={1.2}>
-          <div className="">
+          <div className="mt-[-1000px] xs:mt-[0px]">
             <Experience />
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={3} speed={1.8}>
-          <div className="h-[800px] bg-cover bg-no-repeat bg-center bg-contact-pattern lg:mt-[1500px] sm:mt-[1800px] mt-[1500px]">
+          <div className="  h-[800px] bg-cover bg-no-repeat  bg-contact-pattern lg:mt-[1500px] sm:mt-[1800px] xs:mt-[1500px] mt-[2000px] mb-[1500px]">
             <Contact />
           </div>
         </ParallaxLayer>

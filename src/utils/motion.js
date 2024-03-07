@@ -1,15 +1,17 @@
 export const textVariant = (delay) => {
     return {
-      hidden: {
+      stiffness: 100, // Experiment with different values
+      damping: 10, 
+      initial: {
         y: -50,
         opacity: 0,
       },
-      show: {
+      animate: {
         y: 0,
         opacity: 1,
         transition: {
           type: "spring",
-          duration: 1.25,
+          duration: 1.3,
           delay: delay,
         },
       },
@@ -17,6 +19,8 @@ export const textVariant = (delay) => {
   };
   export const textVariant3 = (delay) => {
     return {
+      stiffness: 100, // Experiment with different values
+      damping: 10,   // Experiment with different values
       hidden: {
         y: -10,
         opacity: 0,
@@ -25,6 +29,8 @@ export const textVariant = (delay) => {
         y: 0,
         opacity: 1,
         transition: {
+          stiffness: 500, // Experiment with different values
+          damping: 50,   // Experiment with different values
           type: "spring",
           duration: 0.5,
           delay: delay,

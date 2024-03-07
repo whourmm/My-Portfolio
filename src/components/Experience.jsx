@@ -9,8 +9,8 @@ import { styles } from "../styles";
 
 const Timeline = () => {
   return (
-    <div className="">
-      <div variants={textVariant3(0.5)} className="mt-[500px] xs:mt-0">
+    <div className="block">
+      <div className="mt-[500px] xs:mt-0 mt-[500px]">
         <p className={`${styles.sectionSubText} ml-6`}>
           My recent achievements
         </p>
@@ -30,8 +30,12 @@ const Timeline = () => {
 
           return (
             <motion.div
-              variants={textVariant(0.5 * i)}
+              variants={textVariant(0.5 * i + 3)}
+              initial="initial"
+              animate="animate"
+              style={{ transform: "translateZ(0)" }}
               className="block flex justify-center items-center"
+              key={element.id}
             >
               <div key={element.id} className="flex m-5 relative ">
                 <div
