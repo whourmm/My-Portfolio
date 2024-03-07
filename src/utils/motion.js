@@ -15,6 +15,23 @@ export const textVariant = (delay) => {
       },
     };
   };
+  export const textVariant3 = (delay) => {
+    return {
+      hidden: {
+        y: -10,
+        opacity: 0,
+      },
+      show: {
+        y: 0,
+        opacity: 1,
+        transition: {
+          type: "spring",
+          duration: 0.5,
+          delay: delay,
+        },
+      },
+    };
+  };
   export const imageVariant = (delay) => {
     return {
       hidden: {

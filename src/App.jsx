@@ -28,13 +28,13 @@ const App = () => {
             <About />
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={2} speed={1.5}>
-          <div className="mt-[-500px]">
+        <ParallaxLayer offset={2} speed={1.2}>
+          <div className="">
             <Experience />
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={3} speed={1.8}>
-          <div className="h-[1000px] bg-cover bg-no-repeat bg-center bg-contact-pattern">
+          <div className="h-[800px] bg-cover bg-no-repeat bg-center bg-contact-pattern lg:mt-[1500px] sm:mt-[1800px] mt-[1500px]">
             <Contact />
           </div>
         </ParallaxLayer>

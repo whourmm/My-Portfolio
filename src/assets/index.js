@@ -17,7 +17,7 @@ import boardgame from "./boardgame.png"
 import codingChallenge from "./codingChallenge.svg"
 import ku01 from "./ku01.jpg"
 import test from "./test.png"
-import website from "./website.png"
+import website from "./OpenAPI.png"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";

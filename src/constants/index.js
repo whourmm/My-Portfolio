@@ -235,7 +235,7 @@ import {
       date: "2023-present",
       icon: "school",
       color: "red",
-      tech: ["JavaScript", "NodeJS", "Postman", "MongoDB", "HTML/CSS"],
+      tech: ["JavaScript", "NodeJS", "Postman", "MongoDB", "OpenAPI"],
       image : website
     },
   ];

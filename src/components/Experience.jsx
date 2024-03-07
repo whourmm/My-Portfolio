@@ -1,5 +1,5 @@
 import * as React from "react";
-import { textVariant } from "../utils/motion";
+import { textVariant, textVariant3 } from "../utils/motion";
 import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
 import { experiences } from "../constants/index.js";
@@ -9,13 +9,13 @@ import { styles } from "../styles";
 
 const Timeline = () => {
   return (
-    <div>
-      <motion.div variants={textVariant(0.5)} className="mt-[500px] xs:mt-0">
+    <div className="">
+      <div variants={textVariant3(0.5)} className="mt-[500px] xs:mt-0">
         <p className={`${styles.sectionSubText} ml-6`}>
           My recent achievements
         </p>
         <h2 className={`${styles.sectionHeadText} ml-6`}>Experience</h2>
-      </motion.div>
+      </div>
       <div className="mt-10">
         {experiences.map((element, i) => {
           const colors = [
@@ -30,7 +30,7 @@ const Timeline = () => {
 
           return (
             <motion.div
-              variants={textVariant(0.5)}
+              variants={textVariant(0.5 * i)}
               className="block flex justify-center items-center"
             >
               <div key={element.id} className="flex m-5 relative ">
