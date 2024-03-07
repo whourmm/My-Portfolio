@@ -34,7 +34,7 @@ const App = () => {
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={3} speed={1.8}>
-          <div className="h-[800px] bg-cover bg-no-repeat  bg-contact-pattern lg:mt-[1500px] sm:mt-[1800px] xs:mt-[1500px] mt-[2000px] mb-[1500px]">
+          <div className="h-[800px] bg-cover bg-no-repeat  bg-contact-pattern lg:mt-[1500px] sm:mt-[1800px] xs:mt-[1500px] mt-[2000px] mb-[2000px]">
             <Contact />
           </div>
         </ParallaxLayer>

@@ -180,8 +180,8 @@ import {
     },
     {
       id: 3,
-      title: "Coding Competition KU01",
-      location: "Online, Kasetsart University",
+      title: "KU01 Competition",
+      location: "Coding, Kasetsart University",
       description: "Top 50% programmer from KU01 2021 (Coding Problem Solving Skills Abilities Test at Kasetsart University)",
       buttonText: "Details",
       date: "2021-2023",

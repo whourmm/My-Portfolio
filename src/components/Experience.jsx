@@ -52,7 +52,7 @@ const Timeline = () => {
                   <img
                     src={element.icon === "school" ? schoolIcon : workIcon}
                     alt="icon"
-                    className={`${color} w-10 p-1 rounded-lg z-20`}
+                    className={`${color} w-5 xs:w-10 p-1 rounded-lg z-20`}
                   />
                   <div
                     className={`${color} h-px w-8 translate-y-5 opacity-30`}
@@ -114,7 +114,7 @@ const Timeline = () => {
                   <img
                     src={element.icon === "school" ? schoolIcon : workIcon}
                     alt="icon"
-                    className={`${color} w-8 p-1 rounded-lg z-20 absolute left-4 top-4 sm:hidden`}
+                    className={`${color} w-6 xs:w-8 p-1 rounded-lg z-20 absolute left-4 top-4 sm:hidden`}
                   />
                 </div>
               </div>
