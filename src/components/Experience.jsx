@@ -86,12 +86,12 @@ const Timeline = () => {
                     </div>
                   </div>
 
-                  <div className="hidden sm:block flex flex-wrap mb-1 xs:mt-[-50px] sm:mt-[10px] lg:mt-[-10px] justify-center items-center ">
+                  <div className="hidden sm:block flex flex-wrap mb-1 xs:mt-[-50px] sm:mt-5 lg:mt-5 justify-center items-center ">
                     {element.tech.map((tech, index) => {
                       return (
                         <span
                           key={index}
-                          className="bg-gray-900 rounded-xl px-2 py-1 text-sm m-1"
+                          className="bg-gray-900 rounded-xl px-2 py-1 text-sm "
                         >
                           {tech}
                         </span>

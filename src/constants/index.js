@@ -41,17 +41,17 @@ import {
   export const allContact = [
     {
       image: line,
-      text: "line",
-      link: "https://web.facebook.com/vast.anda",
+      text: "andavarinthorn1409@gmail.com",
+      link: "",
     },
     {
       image: instagram,
-      text: "Instagram",
+      text: "@_anda_varin_",
       link: "https://www.instagram.com/_anda_varin_/",
     },
     {
       image: gmail,
-      text: "gmail",
+      text: "YuMMy",
       link: "discordapp.com/users/694203870796316692",
     },
   ];
