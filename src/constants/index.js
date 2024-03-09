@@ -41,7 +41,7 @@ import {
   export const allContact = [
     {
       image: line,
-      text: "andavarinthorn1409@gmail.com",
+      text: "6633221621@student.chula.ac.th",
       link: "",
     },
     {
