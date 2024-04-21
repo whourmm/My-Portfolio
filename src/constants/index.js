@@ -77,13 +77,13 @@ import {
   const services = [
     {
       title: "My github",
-      icon: web,
+      icon: mobile,
       link: "https://github.com/whourmm"
     },
     {
-      title: "Physics Tutor",
-      icon: mobile,
-      link: "https://www.instagram.com/p/Cs5X_s8Sni3/?img_index=1"
+      title: "Dynamic Website Project",
+      icon: web,
+      link: "https://swdevprac2-project-dale-mai-mi-chip.vercel.app/"
     },
     {
       title: "Static Website Project",
