@@ -93,7 +93,7 @@ import {
     {
       title: "CV",
       icon: creator,
-      link: "https://github.com/whourmm/portfolio.github.io/blob/main/Computer%20Engineering%20and%20Digital%20Technology%20in%20Chulalongkorn%20University.pdf"
+      link: "https://drive.google.com/file/d/1BX7JPe56yC8Lwprz0cUM__T5QlIkRGi9/view?usp=sharing"
     },
 
   ];
