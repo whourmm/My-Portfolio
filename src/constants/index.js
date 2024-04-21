@@ -230,12 +230,12 @@ import {
       id: 7,
       title: "Project Website | CU",
       location: "Chulalongkron University",
-      description: "I utilize Postman for Message Shop Reservation, employing REST API with JWT as the token converter and MongoDB as the database.",
+      description: "In Backend, I utilize Postman for Message Shop Reservation, employing REST API with JWT as the token converter and MongoDB as the database. And also use React Typescript and NextJS as the stack in frontend ",
       buttonText: "Details",
       date: "2023-present",
       icon: "school",
       color: "red",
-      tech: ["JavaScript", "NodeJS", "Postman", "MongoDB", "OpenAPI"],
+      tech: ["JavaScript", "NodeJS", "Postman", "MongoDB", "OpenAPI", "TypeScript", "React", "NextJs", "Tailwind"],
       image : website
     },
   ];
