@@ -164,7 +164,8 @@ import {
       icon: "work",
       color: "purple",
       tech: ["C", "Ardunino", "ESP8266", "Physics"],
-      image : scius
+      image : scius,
+       link : ''
     },
     {
       id: 2,
@@ -176,7 +177,8 @@ import {
       icon: "work",
       color: "yellow",
       tech: ["Physics", "Time Management"],
-      image : tpho
+      image : tpho,
+       link : ''
     },
     {
       id: 3,
@@ -188,7 +190,8 @@ import {
       icon: "work",
       color: "red",
       tech: ["Python",  "Time Management"],
-      image : ku01
+      image : ku01,
+       link : ''
     },
     {
       id: 4,
@@ -200,7 +203,8 @@ import {
       icon: "school",
       color: "blue",
       tech: ["Leadership", "Time Management", "Organization"],
-      image : schoolDarun
+      image : schoolDarun,
+       link : ''
     },
     {
       id: 5,
@@ -212,7 +216,8 @@ import {
       icon: "work",
       color: "orange",
       tech: ["Communication Skill", "Pitching Skill"],
-      image : boardgame
+      image : boardgame,
+      link : ''
     },
     {
       id: 6,
@@ -224,7 +229,8 @@ import {
       icon: "work",
       color: "orange",
       tech: ["React", "Typescript", "Javascript", "CSS", "Html"],
-      image : codingChallenge
+      image : codingChallenge,
+      link : 'https://hightech-codingchallenge.vercel.app/'
     },
     {
       id: 7,
@@ -236,7 +242,8 @@ import {
       icon: "school",
       color: "red",
       tech: ["JavaScript", "NodeJS", "Postman", "MongoDB", "OpenAPI", "TypeScript", "React", "NextJs", "tailwind"],
-      image : website
+      image : website,
+      link : 'https://swdevprac2-project-dale-mai-mi-chip.vercel.app/'
     },
   ];
 

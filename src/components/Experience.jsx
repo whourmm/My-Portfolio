@@ -6,6 +6,7 @@ import { experiences } from "../constants/index.js";
 import schoolIcon from "../assets/school.svg";
 import workIcon from "../assets/work.svg";
 import { styles } from "../styles";
+import { Link } from "react-router-dom";
 
 const Timeline = () => {
   return (
@@ -65,11 +66,17 @@ const Timeline = () => {
                     <span className="sm:hidden">| {element.date}</span>
                   </div>
                   <div className="justify-center flex ">
-                    <img
-                      src={element.image}
-                      alt="logo"
-                      className="block sm:hidden sm:w-[400px] sm:h-[120px] h-[100px] w-[120px] mt-[-10px] mb-[10px] object-contain "
-                    />
+                    <Link to={element?.link} target="_blank">
+                      <img
+                        src={element.image}
+                        alt="logo"
+                        className="block sm:hidden sm:w-[400px] sm:h-[120px] h-[100px] w-[120px] mt-[-10px] mb-[10px] object-contain "
+                        onClick={(e) => {
+                          console.log("Click Now");
+                          // e.preventDefault();
+                        }}
+                      />
+                    </Link>
                   </div>
                   <div className=" grid grid-cols-2 sm:gap-5 gap-[-100px]">
                     <div className="">
@@ -82,6 +89,10 @@ const Timeline = () => {
                         src={element.image}
                         alt="logo"
                         className="hidden sm:block sm:w-[400px] sm:h-[120px] h-[100px] w-[120px] mt-[-10px] mb-[10px] object-contain "
+                        onClick={(e) => {
+                          console.log("Click Now");
+                          // e.preventDefault();
+                        }}
                       />
                     </div>
                   </div>

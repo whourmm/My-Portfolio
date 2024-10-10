@@ -35,7 +35,7 @@ const Hero = () => {
             variants={textVariant(0.5)}
             className="text-center lg:text-left"
           >
-            Varinthorn Chatburapachai
+            Varinthorn Chatburapachai | CEDT CU
           </motion.h1>
           <div className="sm:hidden flex items-center justify-center">
             <motion.img
